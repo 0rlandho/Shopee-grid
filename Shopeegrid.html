@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>shopee</title>
+    <style>
+    .item1 { 
+        grid-area: side; 
+        width: 400px;
+        height: 60px;
+        background-color: yellow;
+        background-image: url(3.png);
+        background-position: center center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        
+    }
+    
+    .item2 { 
+        grid-area: side2;
+        width: 400px;
+        height: 60px;
+        background-image: url(2.png);
+        background-position: center center;
+        background-repeat: no-repeat;
+        background-size: cover;
+     
+    }
+    
+    .item3 {
+        grid-area: main2; 
+        width: 785px;
+        height: 175px;
+        background-image: url(1.png);
+        background-color: yellow;
+        background-repeat: no-repeat;
+        background-size: cover;
+      
+    }
+    
+    .grid-container{
+        display: grid;
+        grid-template-areas: 
+        "main2 main2 main2 main2  side"
+        "main2 main2 main2 main2 side2";
+        gap: 3px;
+        background-color: salmon;
+        margin-top: 150px;
+        margin-left: 20px;
+        padding: 30px;
+        padding-top: 5px;
+        padding-left: 5px;
+        padding-right: 5px;
+        position: absolute;
+        width: 1200px; 
+        height: 200px; 
+    }
+
+    .grid-container > div {
+        background-color: rgba(97, 138, 150, 0.8);
+        text-align: center;
+        padding: 25px 0;
+        font-size: 15px;
+        background-position: center;
+    }
+    
+    </style>
+</head>
+<body>
+    <div class="grid-container">
+        <div class="item1"></div>
+        <div class="item2"></div>
+        <div class="item3"></div>
+    </div>
+</body>
+</html>
